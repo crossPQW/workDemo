@@ -5,7 +5,9 @@
 //  Created by linyibin on 15/5/19.
 //  Copyright (c) 2015年 黄少华. All rights reserved.
 //
-
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "UIView+SD.h"
 #ifndef pieDemo_pieDemo_Prefix_pch
 #define pieDemo_pieDemo_Prefix_pch
 

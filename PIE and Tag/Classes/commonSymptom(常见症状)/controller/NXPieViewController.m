@@ -13,6 +13,7 @@
 #import "SKTagButton.h"
 #import "MASConstraint.h"
 #import "Masonry.h"
+#import "SHDiagnoseViewController.h"
 #define kTagViewH 100
 #define kSecondTagViewH 100
 #define kTagNum 1000
@@ -32,6 +33,7 @@
 
 //保存上面所有tags
 @property (nonatomic, strong) NSMutableArray *firstTags;
+
 //保存下面的所有tags
 @property (nonatomic, strong) NSMutableArray *secondTags;
 //中间层,用来scrollview内部所有控件
@@ -69,8 +71,23 @@
     
     [self setupTimer];
     
+    [self setupRightItem];
 }
 
+
+- (void)setupRightItem
+{
+    
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"提交" style:UIBarButtonItemStylePlain target:self action:@selector(commit:)];
+    self.navigationItem.rightBarButtonItem = item;
+}
+
+- (void)commit:(UIButton *)btn
+{
+    SHDiagnoseViewController *diagnoseVc = [[SHDiagnoseViewController alloc] init];
+    diagnoseVc.title = @"病例";
+    [self.navigationController pushViewController:diagnoseVc animated:YES];
+}
 
 - (void)setupUI
 {
@@ -153,7 +170,6 @@
 - (void)setupOptionSympotm{
     
     __weak NXPieViewController *weakSelf = self;
-    __weak VBPieChart *weakChart = _chart;
 
     //添加标题
     UILabel *titleLabel = [[UILabel alloc] init];
@@ -172,7 +188,7 @@
     self.tagView = ({
         SKTagView *tagView = [[SKTagView alloc] init];
         weakSelf.tagView   = tagView;
-        tagView.backgroundColor = [UIColor yellowColor];
+        tagView.backgroundColor = [UIColor clearColor];
         tagView.padding    = UIEdgeInsetsMake(12, 12, 12, 12);
         tagView.insets     = 10;
         tagView.lineSpace  = 10;
@@ -180,8 +196,8 @@
         tagView.didClickTagAtIndex = ^(NSUInteger index){
             SKTagButton *firstTagBtn    = self.firstTags[index];//上面的按钮
             SKTagButton *secondTagBtn   = self.secondTags[index];//下面的按钮
-            firstTagBtn.backgroundColor = [UIColor lightGrayColor];
-            secondTagBtn.backgroundColor= [UIColor redColor];
+            firstTagBtn.titleLabel.textColor = [UIColor lightGrayColor];
+            secondTagBtn.titleLabel.textColor= [UIColor blackColor];
         };
         tagView;
     });
@@ -254,12 +270,9 @@
         secondTagView.lineSpace  = 10;
         //第二个view内部按钮点击事件
         secondTagView.didClickTagAtIndex = ^(NSUInteger index){
-            NSUInteger realIndex        = index - 1;
-            SKTagButton *firstTagBtn     = self.firstTags[realIndex];//上面的按钮
-            SKTagButton *secondTagBtn    = self.secondTags[realIndex];//下面得按钮
-            NSDictionary *dict           = self.chartValues[realIndex];
-            firstTagBtn.backgroundColor  = dict[@"color"];
-            secondTagBtn.backgroundColor = [UIColor lightGrayColor];
+            SKTagButton *firstTagBtn     = self.firstTags[index];//上面的按钮
+            SKTagButton *secondTagBtn    = self.secondTags[index];//下面得按钮
+            NSDictionary *dict           = self.chartValues[index];
             
         };
         secondTagView;
