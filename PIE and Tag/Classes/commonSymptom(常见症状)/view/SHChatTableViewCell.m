@@ -28,14 +28,14 @@
         self.selectedBackgroundView = [[UIView alloc] init];
         self.backgroundColor = [UIColor clearColor];
         
-        UIButton *timeBtn = [[UIButton alloc] init];
-        self.timeBtn = timeBtn;
-        [timeBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        timeBtn.titleLabel.font = [UIFont systemFontOfSize:12];
-        timeBtn.enabled = NO;
-        UIImage *image = [UIImage imageNamed:@"MessageContent_TimeNodeBkg"];
-        [timeBtn setBackgroundImage:[image stretchableImageWithLeftCapWidth:image.size.width * 0.5 topCapHeight:image.size.height * 0.5] forState:UIControlStateNormal];
-        [self.contentView addSubview:_timeBtn];
+//        UIButton *timeBtn = [[UIButton alloc] init];
+//        self.timeBtn = timeBtn;
+//        [timeBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+//        timeBtn.titleLabel.font = [UIFont systemFontOfSize:12];
+//        timeBtn.enabled = NO;
+//        UIImage *image = [UIImage imageNamed:@"MessageContent_TimeNodeBkg"];
+//        [timeBtn setBackgroundImage:[image stretchableImageWithLeftCapWidth:image.size.width * 0.5 topCapHeight:image.size.height * 0.5] forState:UIControlStateNormal];
+//        [self.contentView addSubview:_timeBtn];
         
         //头像
         UIImageView *iconView = [[UIImageView alloc] init];
@@ -45,8 +45,7 @@
         //正文
         UIButton *contentBtn = [[UIButton alloc] init];
         self.contentBtn = contentBtn;
-        [contentBtn setTitleColor:[UIColor colorWithRed:154/255 green:154/255 blue:154/255 alpha:1.f] forState:UIControlStateNormal];
-        contentBtn.titleLabel.font = [UIFont systemFontOfSize:14];
+        contentBtn.titleLabel.font = [UIFont systemFontOfSize:17];
         contentBtn.titleLabel.numberOfLines = 0;
         [self.contentView addSubview:contentBtn];
     }
@@ -58,29 +57,32 @@
     _messageFrame = messageFrame;
     SHMessage *message = messageFrame.message;
     
-    [_timeBtn setTitle:message.time forState:UIControlStateNormal];
-    _timeBtn.frame = _messageFrame.timeF;
+//    [_timeBtn setTitle:message.time forState:UIControlStateNormal];
+//    _timeBtn.frame = _messageFrame.timeF;
     
-    _iconView.image = [UIImage imageNamed:@"EPackageTusijiImage"];
+    _iconView.image = [UIImage imageNamed:@"20131017210454_W5HnG"];
     _iconView.frame = _messageFrame.iconF;
     
     [_contentBtn setTitle:message.content forState:UIControlStateNormal];
-    _contentBtn.contentEdgeInsets = UIEdgeInsetsMake(10, 20, 15, 10);
+    _contentBtn.contentEdgeInsets = UIEdgeInsetsMake(15, 10, 15, 10);
     
     UIImage *normal, *focused;
     if (message.type == MessageTyeMe) {
-        normal = [UIImage imageNamed:@"SenderTextNodeBkg"];
+        normal = [UIImage imageNamed:@"blue"];
         normal = [normal stretchableImageWithLeftCapWidth:normal.size.width * 0.5 topCapHeight:normal.size.height * 0.7];
-        focused = [UIImage imageNamed:@"SenderTextNodeBkgHL"];
+        focused = [UIImage imageNamed:@"blue"];
         focused = [focused stretchableImageWithLeftCapWidth:focused.size.width * 0.5 topCapHeight:focused.size.height * 0.7];
+        [_contentBtn setTitleColor:[UIColor colorWithHexString:@"#fff"] forState:UIControlStateNormal];
+
     }else{
-        normal = [UIImage imageNamed:@"ReceiverTextNodeBkg"];
+        normal = [UIImage imageNamed:@"white"];
         normal = [normal stretchableImageWithLeftCapWidth:normal.size.width * 0.5 topCapHeight:normal.size.height * 0.7];
-        focused = [UIImage imageNamed:@"ReceiverTextNodeBkgHL"];
+        focused = [UIImage imageNamed:@"white"];
         focused = [focused stretchableImageWithLeftCapWidth:focused.size.width * 0.5 topCapHeight:focused.size.height * 0.7];
+        [_contentBtn setTitleColor:kblackColor forState:UIControlStateNormal];
+
     }
     [_contentBtn setBackgroundImage:normal forState:UIControlStateNormal];
-    [_contentBtn setBackgroundColor:[UIColor blueColor]];
     [_contentBtn setBackgroundImage:focused forState:UIControlStateHighlighted];
     _contentBtn.frame = messageFrame.contentF;
 

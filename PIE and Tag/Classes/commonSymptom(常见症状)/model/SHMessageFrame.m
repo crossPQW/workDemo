@@ -16,12 +16,12 @@
     
     CGFloat screenW = [UIScreen mainScreen].bounds.size.width;
     
-    if (_showTime) {
-        CGFloat timeY = 10;
-        CGSize timesize = [message.time sizeWithFont:[UIFont systemFontOfSize:12]];
-        CGFloat timeX = (screenW - timesize.width) * 0.5;
-        _timeF = CGRectMake(timeX, timeY, timesize.width +15, timesize.height + 10);
-    }
+//    if (_showTime) {
+//        CGFloat timeY = 10;
+//        CGSize timesize = [message.time sizeWithFont:[UIFont systemFontOfSize:12]];
+//        CGFloat timeX = (screenW - timesize.width) * 0.5;
+//        _timeF = CGRectMake(timeX, timeY, timesize.width +15, timesize.height + 10);
+//    }
     
     //头像
     CGFloat iconX = 10;

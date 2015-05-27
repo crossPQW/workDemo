@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>content</key>
+		<string>testData01</string>
+		<key>icon</key>
+		<string>icon01.png</string>
+		<key>time</key>
+		<string>前天 10:25</string>
+		<key>type</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>content</key>
+		<string>testData02</string>
+		<key>icon</key>
+		<string>icon01.png</string>
+		<key>time</key>
+		<string>前天 10:25</string>
+		<key>type</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>content</key>
+		<string>testData03</string>
+		<key>icon</key>
+		<string>icon02.png</string>
+		<key>time</key>
+		<string>昨天 20:05</string>
+		<key>type</key>
+		<integer>1</integer>
+	</dict>
+	<dict>
+		<key>content</key>
+		<string>testData04</string>
+		<key>icon</key>
+		<string>icon01.png</string>
+		<key>time</key>
+		<string>昨天 20:07</string>
+		<key>type</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>content</key>
+		<string>testData05</string>
+		<key>icon</key>
+		<string>icon02.png</string>
+		<key>time</key>
+		<string>昨天 20:07</string>
+		<key>type</key>
+		<integer>1</integer>
+	</dict>
+	<dict>
+		<key>content</key>
+		<string>testData066666666666</string>
+		<key>icon</key>
+		<string>icon01.png</string>
+		<key>time</key>
+		<string>昨天 20:07</string>
+		<key>type</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>content</key>
+		<string>testData07</string>
+		<key>icon</key>
+		<string>icon02.png</string>
+		<key>time</key>
+		<string>昨天 20:11</string>
+		<key>type</key>
+		<integer>1</integer>
+	</dict>
+	<dict>
+		<key>content</key>
+		<string>testData08</string>
+		<key>icon</key>
+		<string>icon01.png</string>
+		<key>time</key>
+		<string>昨天 20:15</string>
+		<key>type</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>content</key>
+		<string>testData09</string>
+		<key>icon</key>
+		<string>icon02.png</string>
+		<key>time</key>
+		<string>昨天 20:15</string>
+		<key>type</key>
+		<integer>1</integer>
+	</dict>
+</array>
+</plist>

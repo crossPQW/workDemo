@@ -87,6 +87,9 @@
     SHDiagnoseViewController *diagnoseVc = [[SHDiagnoseViewController alloc] init];
     diagnoseVc.title = @"病例";
     [self.navigationController pushViewController:diagnoseVc animated:YES];
+//    testViewController *test = [[testViewController alloc] init];
+//    [self.navigationController pushViewController:test animated:YES];
+//    test.view.backgroundColor = [UIColor whiteColor];
 }
 
 - (void)setupUI
@@ -232,7 +235,7 @@
         //添加到数组
         for (SKTagButton *tagBtn in self.tagView.subviews) {
             if ([tagBtn isKindOfClass:[SKTagButton class]]) {
-                NSLog(@"---------%zd",tagBtn.tag);
+
                 //  设置每个button的初始为不可见，之后按照时间间隔显示，产生动画的错觉
                 tagBtn.hidden = YES;
                 [self.firstTags insertObject:tagBtn atIndex:i];
@@ -319,7 +322,6 @@
     static int j = 0;
    
             for (SKTagButton *tagBtn  in self.tagView.subviews) {
-                NSLog(@"========%d  -> %zd",j,tagBtn.tag);
                 if ((kTagNum + j) == tagBtn.tag) {
                     tagBtn.hidden = NO;
                 }
@@ -348,7 +350,6 @@
 }
 
 - (void)dealloc{
-    NSLog(@"--------%@",self.myTimer);
 }
 @end
 

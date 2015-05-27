@@ -8,6 +8,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "UIView+SD.h"
+#import "UIColor+HexColor.h"
 #ifndef pieDemo_pieDemo_Prefix_pch
 #define pieDemo_pieDemo_Prefix_pch
 
@@ -19,6 +20,6 @@
 #define screenWidth  [UIScreen mainScreen].bounds.size.width
 #define screenHight  [UIScreen mainScreen].bounds.size.height
 
-
-
+#define kblackColor [UIColor colorWithHexString:@"#333"]
+#define kgrayColor [UIColor colorWithHexString:@"#666"]
 #endif

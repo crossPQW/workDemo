@@ -26,6 +26,7 @@
 		3894DABA1B1308EA00A7FDE1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3894DAB71B1308EA00A7FDE1 /* ViewController.m */; };
 		3894DABD1B13090500A7FDE1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3894DABC1B13090500A7FDE1 /* AppDelegate.m */; };
 		3894DAC01B13090F00A7FDE1 /* UIColor+HexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3894DABF1B13090F00A7FDE1 /* UIColor+HexColor.m */; };
+		38ECD11A1B155DCE00A4966F /* messages.plist in Resources */ = {isa = PBXBuildFile; fileRef = 38ECD1191B155DCE00A4966F /* messages.plist */; };
 		38F13F5E1B0B466C00D8CF15 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F13F5D1B0B466C00D8CF15 /* main.m */; };
 		38F13F691B0B466C00D8CF15 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38F13F681B0B466C00D8CF15 /* Images.xcassets */; };
 		38F13F6C1B0B466C00D8CF15 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38F13F6A1B0B466C00D8CF15 /* LaunchScreen.xib */; };
@@ -95,6 +96,7 @@
 		3894DABC1B13090500A7FDE1 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3894DABE1B13090F00A7FDE1 /* UIColor+HexColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexColor.h"; sourceTree = "<group>"; };
 		3894DABF1B13090F00A7FDE1 /* UIColor+HexColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexColor.m"; sourceTree = "<group>"; };
+		38ECD1191B155DCE00A4966F /* messages.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = messages.plist; sourceTree = "<group>"; };
 		38F13F581B0B466C00D8CF15 /* PIE and Tag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PIE and Tag.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		38F13F5C1B0B466C00D8CF15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38F13F5D1B0B466C00D8CF15 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -409,6 +411,7 @@
 		38F13F5B1B0B466C00D8CF15 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				38ECD1191B155DCE00A4966F /* messages.plist */,
 				38F13F9B1B0B46B600D8CF15 /* pieDemo-Prefix.pch */,
 				38F13F5C1B0B466C00D8CF15 /* Info.plist */,
 				38F13F5D1B0B466C00D8CF15 /* main.m */,
@@ -526,6 +529,7 @@
 			files = (
 				38F13FC41B0B494B00D8CF15 /* Main.storyboard in Resources */,
 				38F13F6C1B0B466C00D8CF15 /* LaunchScreen.xib in Resources */,
+				38ECD11A1B155DCE00A4966F /* messages.plist in Resources */,
 				38F13F691B0B466C00D8CF15 /* Images.xcassets in Resources */,
 				38F884F81B1413260087A540 /* SHToolView.xib in Resources */,
 				38F885071B1448220087A540 /* MessageContent_TimeNodeBkg@2x.png in Resources */,
