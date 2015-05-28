@@ -16,12 +16,6 @@
     
     CGFloat screenW = [UIScreen mainScreen].bounds.size.width;
     
-//    if (_showTime) {
-//        CGFloat timeY = 10;
-//        CGSize timesize = [message.time sizeWithFont:[UIFont systemFontOfSize:12]];
-//        CGFloat timeX = (screenW - timesize.width) * 0.5;
-//        _timeF = CGRectMake(timeX, timeY, timesize.width +15, timesize.height + 10);
-//    }
     
     //头像
     CGFloat iconX = 10;
@@ -39,7 +33,12 @@
     if (message.type == MessageTyeMe) {
         contentX = iconX - 10 - contentSize.width - 25 - 15;
     }
-    _contentF = CGRectMake(contentX, contentY, contentSize.width + 40, contentSize.height + 40);
+    CGFloat width = contentSize.width + 40;
+    if ((contentX + width) > screenWidth) {
+        width = screenWidth - contentX - 20;
+    }
+    
+    _contentF = CGRectMake(contentX, contentY, width, contentSize.height + 40);
 
     _cellHeight = CGRectGetMaxY(_contentF);
 }

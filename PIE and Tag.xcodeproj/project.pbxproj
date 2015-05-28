@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		380279871B1467AA00F93836 /* UIView+SD.m in Sources */ = {isa = PBXBuildFile; fileRef = 380279861B1467AA00F93836 /* UIView+SD.m */; };
+		388738BD1B16ADD000CB2BB2 /* SHWaitForMakeReport.m in Sources */ = {isa = PBXBuildFile; fileRef = 388738BC1B16ADD000CB2BB2 /* SHWaitForMakeReport.m */; };
+		388738C11B16B5AE00CB2BB2 /* SHWaitDoc.m in Sources */ = {isa = PBXBuildFile; fileRef = 388738C01B16B5AE00CB2BB2 /* SHWaitDoc.m */; };
+		388738C41B16CAFA00CB2BB2 /* SHClockBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 388738C31B16CAFA00CB2BB2 /* SHClockBtn.m */; };
+		388738C71B17178200CB2BB2 /* SHFindSuitableDoc.m in Sources */ = {isa = PBXBuildFile; fileRef = 388738C61B17178200CB2BB2 /* SHFindSuitableDoc.m */; };
+		388738C91B172D9000CB2BB2 /* doc.plist in Resources */ = {isa = PBXBuildFile; fileRef = 388738C81B172D9000CB2BB2 /* doc.plist */; };
 		3894DA811B1308C700A7FDE1 /* NXPieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3894DA801B1308C700A7FDE1 /* NXPieViewController.m */; };
 		3894DAA61B1308D400A7FDE1 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 3894DA841B1308D300A7FDE1 /* MASCompositeConstraint.m */; };
 		3894DAA71B1308D400A7FDE1 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 3894DA871B1308D300A7FDE1 /* MASConstraint.m */; };
@@ -55,6 +60,15 @@
 /* Begin PBXFileReference section */
 		380279851B1467AA00F93836 /* UIView+SD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SD.h"; sourceTree = "<group>"; };
 		380279861B1467AA00F93836 /* UIView+SD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SD.m"; sourceTree = "<group>"; };
+		388738BB1B16ADD000CB2BB2 /* SHWaitForMakeReport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHWaitForMakeReport.h; sourceTree = "<group>"; };
+		388738BC1B16ADD000CB2BB2 /* SHWaitForMakeReport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHWaitForMakeReport.m; sourceTree = "<group>"; };
+		388738BF1B16B5AE00CB2BB2 /* SHWaitDoc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHWaitDoc.h; sourceTree = "<group>"; };
+		388738C01B16B5AE00CB2BB2 /* SHWaitDoc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHWaitDoc.m; sourceTree = "<group>"; };
+		388738C21B16CAFA00CB2BB2 /* SHClockBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHClockBtn.h; sourceTree = "<group>"; };
+		388738C31B16CAFA00CB2BB2 /* SHClockBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHClockBtn.m; sourceTree = "<group>"; };
+		388738C51B17178200CB2BB2 /* SHFindSuitableDoc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHFindSuitableDoc.h; sourceTree = "<group>"; };
+		388738C61B17178200CB2BB2 /* SHFindSuitableDoc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHFindSuitableDoc.m; sourceTree = "<group>"; };
+		388738C81B172D9000CB2BB2 /* doc.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = doc.plist; sourceTree = "<group>"; };
 		3894DA7F1B1308C700A7FDE1 /* NXPieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXPieViewController.h; sourceTree = "<group>"; };
 		3894DA801B1308C700A7FDE1 /* NXPieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXPieViewController.m; sourceTree = "<group>"; };
 		3894DA831B1308D300A7FDE1 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
@@ -141,6 +155,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		388738BE1B16B4D400CB2BB2 /* foot&head */ = {
+			isa = PBXGroup;
+			children = (
+				38F885031B1422200087A540 /* SHReportView.h */,
+				38F885041B1422200087A540 /* SHReportView.m */,
+				388738BB1B16ADD000CB2BB2 /* SHWaitForMakeReport.h */,
+				388738BC1B16ADD000CB2BB2 /* SHWaitForMakeReport.m */,
+				388738BF1B16B5AE00CB2BB2 /* SHWaitDoc.h */,
+				388738C01B16B5AE00CB2BB2 /* SHWaitDoc.m */,
+				388738C51B17178200CB2BB2 /* SHFindSuitableDoc.h */,
+				388738C61B17178200CB2BB2 /* SHFindSuitableDoc.m */,
+			);
+			name = "foot&head";
+			sourceTree = "<group>";
+		};
 		3894DA6C1B13076600A7FDE1 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -201,7 +230,10 @@
 		3894DA711B13076600A7FDE1 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				388738BE1B16B4D400CB2BB2 /* foot&head */,
 				38F884F91B1417B70087A540 /* cell */,
+				388738C21B16CAFA00CB2BB2 /* SHClockBtn.h */,
+				388738C31B16CAFA00CB2BB2 /* SHClockBtn.m */,
 				38F884F41B1413260087A540 /* SHToolView.h */,
 				38F884F51B1413260087A540 /* SHToolView.m */,
 				38F884F61B1413260087A540 /* SHToolView.xib */,
@@ -412,6 +444,7 @@
 			isa = PBXGroup;
 			children = (
 				38ECD1191B155DCE00A4966F /* messages.plist */,
+				388738C81B172D9000CB2BB2 /* doc.plist */,
 				38F13F9B1B0B46B600D8CF15 /* pieDemo-Prefix.pch */,
 				38F13F5C1B0B466C00D8CF15 /* Info.plist */,
 				38F13F5D1B0B466C00D8CF15 /* main.m */,
@@ -441,8 +474,6 @@
 			children = (
 				38F884FA1B1417C60087A540 /* SHChatTableViewCell.h */,
 				38F884FB1B1417C60087A540 /* SHChatTableViewCell.m */,
-				38F885031B1422200087A540 /* SHReportView.h */,
-				38F885041B1422200087A540 /* SHReportView.m */,
 			);
 			name = cell;
 			sourceTree = "<group>";
@@ -533,6 +564,7 @@
 				38F13F691B0B466C00D8CF15 /* Images.xcassets in Resources */,
 				38F884F81B1413260087A540 /* SHToolView.xib in Resources */,
 				38F885071B1448220087A540 /* MessageContent_TimeNodeBkg@2x.png in Resources */,
+				388738C91B172D9000CB2BB2 /* doc.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -554,6 +586,7 @@
 				38F884F71B1413260087A540 /* SHToolView.m in Sources */,
 				3894DABA1B1308EA00A7FDE1 /* ViewController.m in Sources */,
 				38F884F31B140C4F0087A540 /* SHDiagnoseViewController.m in Sources */,
+				388738C41B16CAFA00CB2BB2 /* SHClockBtn.m in Sources */,
 				3894DAAD1B1308D400A7FDE1 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				3894DABD1B13090500A7FDE1 /* AppDelegate.m in Sources */,
 				3894DAC01B13090F00A7FDE1 /* UIColor+HexColor.m in Sources */,
@@ -570,10 +603,13 @@
 				3894DAB01B1308D400A7FDE1 /* SKTagButton.m in Sources */,
 				3894DAA91B1308D400A7FDE1 /* MASLayoutConstraint.m in Sources */,
 				3894DA811B1308C700A7FDE1 /* NXPieViewController.m in Sources */,
+				388738C11B16B5AE00CB2BB2 /* SHWaitDoc.m in Sources */,
 				3894DAAE1B1308D400A7FDE1 /* View+MASAdditions.m in Sources */,
+				388738BD1B16ADD000CB2BB2 /* SHWaitForMakeReport.m in Sources */,
 				380279871B1467AA00F93836 /* UIView+SD.m in Sources */,
 				3894DAAA1B1308D400A7FDE1 /* MASViewAttribute.m in Sources */,
 				3894DAA71B1308D400A7FDE1 /* MASConstraint.m in Sources */,
+				388738C71B17178200CB2BB2 /* SHFindSuitableDoc.m in Sources */,
 				3894DAA81B1308D400A7FDE1 /* MASConstraintMaker.m in Sources */,
 				3894DAB21B1308D400A7FDE1 /* VBPieChart.m in Sources */,
 			);

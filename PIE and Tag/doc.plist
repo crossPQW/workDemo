@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>患者有出现咳血现象吗？</string>
+	<string>患者进食、食欲怎么样？</string>
+	<string>有慢性病史吗</string>
+	<string>现在进行了哪些治疗</string>
+	<string>咳嗽、多痰主要是由于感染引起的，痰液淤积会刺激病人咳嗽</string>
+	<string>治愈的可能性不大，缓解症状的方法稍后我会给你开一个处置建议的，你还有其他要问的吗？</string>
+</array>
+</plist>

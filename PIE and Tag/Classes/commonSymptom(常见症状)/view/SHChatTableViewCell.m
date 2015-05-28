@@ -40,6 +40,8 @@
         //头像
         UIImageView *iconView = [[UIImageView alloc] init];
         self.iconView = iconView;
+        iconView.layer.cornerRadius = 20.f;
+        iconView.layer.masksToBounds= YES;
         [self.contentView addSubview:iconView];
 
         //正文
@@ -60,7 +62,6 @@
 //    [_timeBtn setTitle:message.time forState:UIControlStateNormal];
 //    _timeBtn.frame = _messageFrame.timeF;
     
-    _iconView.image = [UIImage imageNamed:@"20131017210454_W5HnG"];
     _iconView.frame = _messageFrame.iconF;
     
     [_contentBtn setTitle:message.content forState:UIControlStateNormal];
@@ -73,6 +74,7 @@
         focused = [UIImage imageNamed:@"blue"];
         focused = [focused stretchableImageWithLeftCapWidth:focused.size.width * 0.5 topCapHeight:focused.size.height * 0.7];
         [_contentBtn setTitleColor:[UIColor colorWithHexString:@"#fff"] forState:UIControlStateNormal];
+        _iconView.image = [UIImage imageNamed:@"20131017210454_W5HnG"];
 
     }else{
         normal = [UIImage imageNamed:@"white"];
@@ -80,6 +82,7 @@
         focused = [UIImage imageNamed:@"white"];
         focused = [focused stretchableImageWithLeftCapWidth:focused.size.width * 0.5 topCapHeight:focused.size.height * 0.7];
         [_contentBtn setTitleColor:kblackColor forState:UIControlStateNormal];
+        _iconView.image = [UIImage imageNamed:@"2532-1211191425230-L.jpg"];
 
     }
     [_contentBtn setBackgroundImage:normal forState:UIControlStateNormal];

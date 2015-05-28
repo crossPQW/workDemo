@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>7C4DF8B3-F223-46F9-9F48-4091992CC318</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>PIE and Tag</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>BB84ABE432B97187AFD67939F69D355082B6AD8C</key>
 		<string>https://github.com/crossPQW/workDemo.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>PIE and Tag.xcodeproj/project.xcworkspace</string>
+	<string>PIE and Tag.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>BB84ABE432B97187AFD67939F69D355082B6AD8C</key>

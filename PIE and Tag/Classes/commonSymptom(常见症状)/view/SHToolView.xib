@@ -12,21 +12,14 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIp-Zt-AFx">
-                    <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
+                    <rect key="frame" x="0.0" y="0.0" width="58" height="45"/>
                     <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="45" id="t51-ni-GVf"/>
+                        <constraint firstAttribute="width" constant="58" id="vOX-QD-e3g"/>
                     </constraints>
-                    <state key="normal" backgroundImage="paizhao">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
+                    <state key="normal" image="paizhao"/>
                     <state key="highlighted" backgroundImage="ToolViewInputVoiceHL"/>
                 </button>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4KC-QM-laO">
-                    <rect key="frame" x="53" y="5" width="310" height="35"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C1i-Ou-2NZ">
                     <rect key="frame" x="0.0" y="0.0" width="371" height="1"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -34,19 +27,24 @@
                         <constraint firstAttribute="height" constant="1" id="iON-iP-BXG"/>
                     </constraints>
                 </view>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4KC-QM-laO">
+                    <rect key="frame" x="58" y="7" width="298" height="32"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="OIp-Zt-AFx" secondAttribute="bottom" id="1Ls-ob-8Xu"/>
-                <constraint firstItem="OIp-Zt-AFx" firstAttribute="leading" secondItem="pxW-4i-F6f" secondAttribute="leading" id="9Gy-Cc-Ayb"/>
-                <constraint firstAttribute="trailing" secondItem="4KC-QM-laO" secondAttribute="trailing" constant="8" id="Bfb-Rn-THt"/>
+                <constraint firstItem="4KC-QM-laO" firstAttribute="top" secondItem="C1i-Ou-2NZ" secondAttribute="bottom" constant="6" id="EIw-UD-Ina"/>
                 <constraint firstItem="C1i-Ou-2NZ" firstAttribute="top" secondItem="pxW-4i-F6f" secondAttribute="top" id="GNG-xa-5wX"/>
-                <constraint firstAttribute="bottom" secondItem="4KC-QM-laO" secondAttribute="bottom" constant="5" id="MRy-Nn-gyL"/>
+                <constraint firstItem="OIp-Zt-AFx" firstAttribute="leading" secondItem="pxW-4i-F6f" secondAttribute="leading" id="RD6-fW-J1z"/>
                 <constraint firstItem="C1i-Ou-2NZ" firstAttribute="leading" secondItem="pxW-4i-F6f" secondAttribute="leading" id="SWw-GH-tbK"/>
-                <constraint firstItem="4KC-QM-laO" firstAttribute="top" secondItem="pxW-4i-F6f" secondAttribute="top" constant="5" id="a4O-gs-Cm6"/>
+                <constraint firstAttribute="bottom" secondItem="4KC-QM-laO" secondAttribute="bottom" constant="6" id="chd-MA-uht"/>
+                <constraint firstItem="4KC-QM-laO" firstAttribute="leading" secondItem="OIp-Zt-AFx" secondAttribute="trailing" id="gX7-Gt-6qJ"/>
                 <constraint firstAttribute="trailing" secondItem="C1i-Ou-2NZ" secondAttribute="trailing" id="gra-aX-qdj"/>
-                <constraint firstItem="4KC-QM-laO" firstAttribute="leading" secondItem="OIp-Zt-AFx" secondAttribute="trailing" constant="8" id="sIA-Zl-z0f"/>
-                <constraint firstItem="OIp-Zt-AFx" firstAttribute="top" secondItem="pxW-4i-F6f" secondAttribute="top" id="vcN-75-2if"/>
+                <constraint firstItem="OIp-Zt-AFx" firstAttribute="top" secondItem="pxW-4i-F6f" secondAttribute="top" id="iIP-LV-R6C"/>
+                <constraint firstAttribute="bottom" secondItem="OIp-Zt-AFx" secondAttribute="bottom" id="kFr-qY-RTr"/>
+                <constraint firstAttribute="trailing" secondItem="4KC-QM-laO" secondAttribute="trailing" constant="15" id="orA-Mj-LRo"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -54,7 +52,7 @@
                 <outlet property="inputField" destination="4KC-QM-laO" id="s6V-qc-8cM"/>
                 <outlet property="sendVoice" destination="OIp-Zt-AFx" id="bWC-nq-lnt"/>
             </connections>
-            <point key="canvasLocation" x="970.5" y="-106.5"/>
+            <point key="canvasLocation" x="891.5" y="-197.5"/>
         </view>
     </objects>
     <resources>

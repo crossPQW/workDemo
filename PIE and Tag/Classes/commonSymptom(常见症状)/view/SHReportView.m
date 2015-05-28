@@ -15,9 +15,6 @@
 
 @interface SHReportView()
 
-
-
-
 @property (nonatomic, strong) UIImageView *userImage;
 @property (nonatomic, strong) NSArray *array;
 @end
@@ -45,20 +42,18 @@
     infomationView.layer.cornerRadius = 6.f;
     infomationView.layer.borderColor = [UIColor colorWithHexString:@"#e0e0e0"].CGColor;
     infomationView.layer.masksToBounds = YES;
+    infomationView.layer.borderWidth = 1.f;
     self.infomationView = infomationView;
     [self addSubview:infomationView];
     
     [infomationView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(ws.mas_top).with.offset(kpadding);
-        make.left.equalTo(ws.mas_left).with.offset(kpadding);
-        make.right.equalTo(ws.mas_right).with.offset(-kpadding);
+        make.left.equalTo(ws.mas_left).with.offset(15);
+        make.right.equalTo(ws.mas_right).with.offset(-15);
     }];
     
     //基本信息
     [self setupBaseInfo];
-    //追加信息
-//    [self setupOtherInfo];
-    
 
 }
 
@@ -250,6 +245,65 @@
         make.size.mas_equalTo(size);
         make.bottom.equalTo(ws.mas_bottom).with.offset(-kpadding);
     }];
+}
+
+
+
+- (void)addInfoWithArray:(NSArray *)array
+{
+    WS(ws);
+    UIView *addInfoView = [[UIView alloc] init];
+    self.addInfoView    = addInfoView;
+    [self.infomationView addSubview:addInfoView];
+    addInfoView.backgroundColor = [UIColor clearColor];
+    [addInfoView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(ws.basicInfoView.mas_bottom).offset(kpadding);
+        make.left.equalTo(ws.infomationView.mas_left).offset(kpadding);
+        make.right.equalTo(ws.infomationView.mas_right);
+        make.bottom.equalTo(ws.infomationView.mas_bottom).offset(-kpadding);
+    }];
+    
+    //分割线
+    UIView *topLineView = [[UIView alloc] init];
+    topLineView.backgroundColor = [UIColor lightGrayColor];
+    [addInfoView addSubview:topLineView];
+    [topLineView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(addInfoView.mas_top);
+        make.left.equalTo(addInfoView.mas_left);
+        make.right.equalTo(addInfoView.mas_right);
+        make.height.mas_equalTo(1);
+        //        make.bottom.equalTo(addInfoView.mas_bottom).offset(-kpadding);
+    }];
+    
+    //标题
+    UILabel *titleLabel = [[UILabel alloc] init];
+    titleLabel.text    = @"追加补充信息";
+    titleLabel.font    = [UIFont systemFontOfSize:15];
+    [addInfoView addSubview:titleLabel];
+    [titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(topLineView.mas_bottom);
+        make.centerX.equalTo(ws.mas_centerX);
+        make.width.mas_equalTo(screenWidth - kpadding * 4);
+        make.bottom.equalTo(addInfoView.mas_bottom).offset(-kpadding);
+    }];
+    
+    
+    //添加QA
+    //    UIView *lastView = nil;
+    //
+    //    for (int i = 0; i < self.array.count; i++) {
+    //        UIView *lineView = [[UIView alloc] init];
+    //        lineView.backgroundColor = [UIColor lightGrayColor];
+    //        [lineView addSubview:topLineView];
+    //        [lineView mas_makeConstraints:^(MASConstraintMaker *make) {
+    //            make.top.equalTo(addInfoView.mas_top);
+    //            make.left.equalTo(addInfoView.mas_left);
+    //            make.right.equalTo(addInfoView.mas_right);
+    //            make.height.mas_equalTo(0.5);
+    //        }];
+    //       
+    //    }
+
 }
 
 

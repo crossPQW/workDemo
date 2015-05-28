@@ -26,4 +26,7 @@
  *  底部的提示
  */
 @property (nonatomic, strong) UIButton *tipBtn;
+
+//添加追加信息
+- (void)addInfoWithArray:(NSArray *)array;
 @end
